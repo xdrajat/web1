@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="logo" class="logo">
+            
+            <nav>
+
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="ham" class="=menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img id="exit" class="exit-btn hide-desktop" src="images/exit.svg" alt="exit-menu"></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+            <h1>Web hosting for the mordern era</h1>
+            <p class="subhead">Go serverless and pay only for what you use.</p>
+            <img src="images/scroll.svg" alt="scroll" class="scroll hide-desktop show-desktop">
+              
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="img1">
+                    <p>This is the first image, yep, this is the first image, yep yesp, this is the first image.</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="img1">
+                    <p>This is the second image, yep, this is the second image, yep yesp, this is the second image.</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="img1">
+                    <p>This is the third image, yep, this is the third image, yep yesp, this is the third image.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grey-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="user1">
+                        <blockquote>Hi i'm first user, yep im first user, yep im first user, yep im first user, yep im first user.</blockquote>
+                        <figcaption>-The Girl</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="user1">
+                        <blockquote>Hi i'm second user, yep im second user, yep im second user, yep im second user, yep im second user.</blockquote>
+                        <figcaption>-The Boy</Boyion>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Start your free trial now!</h2>
+        <a href="#" class="cta">Get Start</a>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+
+                <a href="#">
+                    <img src="images/logo-white.svg" alt="logo" class="logo">
+                </a>
+
+                <p class="address">Dehrdun, Uttrakhand <br>India</p>
+
+                <ul class="footer-links">
+                    <li> <a href="#">Terms of Service</a> </li>
+                    <li> <a href="#">Terms of Policy</a> </li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        
+        
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+        
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+        
+
+
+    </script>
+
+
+
+</body>
+</html>
